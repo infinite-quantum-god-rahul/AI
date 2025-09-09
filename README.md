@@ -67,8 +67,8 @@ A cutting-edge AI-powered platform that analyzes resumes and provides intelligen
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/ai-resume-analyzer.git
-   cd ai-resume-analyzer
+   git clone https://github.com/infinite-quantum-god-rahul/AI.git
+   cd AI
    ```
 
 2. **Set up environment variables**
@@ -260,9 +260,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support
 
-- **Documentation**: [Wiki](https://github.com/your-username/ai-resume-analyzer/wiki)
-- **Issues**: [GitHub Issues](https://github.com/your-username/ai-resume-analyzer/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/ai-resume-analyzer/discussions)
+- **Documentation**: [Wiki](https://github.com/infinite-quantum-god-rahul/AI/wiki)
+- **Issues**: [GitHub Issues](https://github.com/infinite-quantum-god-rahul/AI/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/infinite-quantum-god-rahul/AI/discussions)
 - **Email**: support@resumeai.com
 
 ## 🎯 Roadmap
