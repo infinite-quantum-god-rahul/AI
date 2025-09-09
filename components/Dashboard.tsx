@@ -6,9 +6,9 @@ import {
   ChartBarIcon, 
   BriefcaseIcon,
   StarIcon,
-  TrendingUpIcon,
+  ArrowTrendingUpIcon,
   ArrowLeftIcon,
-  DownloadIcon,
+  ArrowDownTrayIcon,
   ShareIcon,
   EyeIcon,
   CheckCircleIcon,
@@ -23,7 +23,7 @@ interface DashboardProps {
   onReset: () => void
 }
 
-export default function Dashboard({ analysisData, jobMatches, onMatchesLoaded }: DashboardProps) {
+export default function Dashboard({ analysisData, jobMatches, onReset }: DashboardProps) {
   const [activeTab, setActiveTab] = useState<'overview' | 'analytics' | 'recommendations'>('overview')
 
   // Prepare chart data
@@ -74,7 +74,7 @@ export default function Dashboard({ analysisData, jobMatches, onMatchesLoaded }:
           
           <div className="flex space-x-3 mt-4 sm:mt-0">
             <button className="btn-secondary">
-              <DownloadIcon className="w-4 h-4 mr-2" />
+              <ArrowDownTrayIcon className="w-4 h-4 mr-2" />
               Export Report
             </button>
             <button className="btn-secondary">
@@ -90,7 +90,7 @@ export default function Dashboard({ analysisData, jobMatches, onMatchesLoaded }:
             <nav className="-mb-px flex space-x-8">
               {[
                 { id: 'overview', name: 'Overview', icon: ChartBarIcon },
-                { id: 'analytics', name: 'Analytics', icon: TrendingUpIcon },
+                { id: 'analytics', name: 'Analytics', icon: ArrowTrendingUpIcon },
                 { id: 'recommendations', name: 'Recommendations', icon: LightBulbIcon }
               ].map((tab) => (
                 <button
@@ -147,7 +147,7 @@ export default function Dashboard({ analysisData, jobMatches, onMatchesLoaded }:
 
                 <div className="card p-6 text-center">
                   <div className="w-12 h-12 bg-error-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <TrendingUpIcon className="w-6 h-6 text-error-600" />
+                    <ArrowTrendingUpIcon className="w-6 h-6 text-error-600" />
                   </div>
                   <div className="text-2xl font-bold text-gray-900 mb-1">{analysisData?.experience_years}</div>
                   <div className="text-sm text-gray-600">Years Experience</div>
@@ -279,7 +279,7 @@ export default function Dashboard({ analysisData, jobMatches, onMatchesLoaded }:
                         <div className="font-medium text-success-800">High Demand Skills</div>
                         <div className="text-sm text-success-600">Python, JavaScript, React</div>
                       </div>
-                      <TrendingUpIcon className="w-6 h-6 text-success-600" />
+                      <ArrowTrendingUpIcon className="w-6 h-6 text-success-600" />
                     </div>
                     
                     <div className="flex items-center justify-between p-3 bg-warning-50 rounded-lg">
@@ -287,7 +287,7 @@ export default function Dashboard({ analysisData, jobMatches, onMatchesLoaded }:
                         <div className="font-medium text-warning-800">Growing Industries</div>
                         <div className="text-sm text-warning-600">AI/ML, Cloud Computing</div>
                       </div>
-                      <TrendingUpIcon className="w-6 h-6 text-warning-600" />
+                      <ArrowTrendingUpIcon className="w-6 h-6 text-warning-600" />
                     </div>
                     
                     <div className="flex items-center justify-between p-3 bg-primary-50 rounded-lg">
